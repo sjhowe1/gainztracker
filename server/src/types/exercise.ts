@@ -1,6 +1,8 @@
-export type exercise = {
+import { Muscle } from "./muscle";
+
+export type Exercise = {
     description: string;
-    primaryMuscle: string;
-    secondaryMuscle: string;
+    primaryMuscle: Muscle;
+    secondaryMuscles: Array<Muscle>;
     video: any;
 }
