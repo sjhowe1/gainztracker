@@ -1,4 +1,4 @@
-export type exercise = {
+export type Exercise = {
     description: string;
     primaryMuscle: string;
     secondaryMuscle: string;
