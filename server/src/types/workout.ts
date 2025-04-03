@@ -1,10 +1,12 @@
-import { Exercise } from "./exercise";
+import { IExercise } from "./exercise";
 import { Muscle } from "./muscle";
 import { Set } from "./set";
+import { Document } from "mongoose";
 
-export type Workout = {
+export interface IWorkout extends Document{
+    _id: string;
     description: string;
     primaryMuscle: Muscle;
     secondaryMuscles: Array<Muscle>;
-    exercises: Map<Exercise, Array<Set>>
+    exercises: Map<IExercise, Array<Set>>
 }
