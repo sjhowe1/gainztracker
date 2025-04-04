@@ -7,6 +7,8 @@ const Register = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [firstname, setFirstname] = useState('');
+    const [lastname, setLastname] = useState('');
     const navigate = useNavigate();
 
     const [register] = useMutation(REGISTER_USER, {
@@ -16,7 +18,7 @@ const Register = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        register({ variables: { username, email, password } });
+        register({ variables: { username, email, password,firstname,lastname } });
     };
 
     return (
@@ -26,8 +28,8 @@ const Register = () => {
                 <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} required />
                 <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                 <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-                <input type="firstname" placeholder="FirstName" value={password} onChange={(e) => setFirstname(e.target.value)} required />
-                <input type="lastname" placeholder="Lastname" value={password} onChange={(e) => setLastname(e.target.value)} required />
+                <input type="firstname" placeholder="FirstName" value={firstname} onChange={(e) => setFirstname(e.target.value)} required />
+                <input type="lastname" placeholder="Lastname" value={lastname} onChange={(e) => setLastname(e.target.value)} required />
                 <button type="submit">Register</button>
             </form>
         </div>
