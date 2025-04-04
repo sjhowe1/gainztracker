@@ -9,11 +9,20 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [firstname, setFirstname] = useState('');
     const [lastname, setLastname] = useState('');
+    const [message, setMessage] = useState('');
     const navigate = useNavigate();
 
     const [register] = useMutation(REGISTER_USER, {
-        onCompleted: () => navigate('/login'),
-        onError: (error) => alert(error.message),
+        onCompleted: (data) => {
+            if (data.register.message === 'Registration successful') {
+                navigate('/login'); 
+            } else {
+                setMessage(data.register.message); 
+            }
+        },
+        onError: (error) => {
+            setMessage(error.message); 
+        },
     });
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -24,12 +33,14 @@ const Register = () => {
     return (
         <div>
             <h2>Register</h2>
+             {/* Display message if available */}
+            {message && <p>{message}</p>}
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} required />
                 <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                 <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-                <input type="firstname" placeholder="FirstName" value={firstname} onChange={(e) => setFirstname(e.target.value)} required />
-                <input type="lastname" placeholder="Lastname" value={lastname} onChange={(e) => setLastname(e.target.value)} required />
+                <input type="text" placeholder="FirstName" value={firstname} onChange={(e) => setFirstname(e.target.value)} required />
+                <input type="text" placeholder="Lastname" value={lastname} onChange={(e) => setLastname(e.target.value)} required />
                 <button type="submit">Register</button>
             </form>
         </div>
