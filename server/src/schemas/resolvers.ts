@@ -25,4 +25,10 @@ interface AddUserArgs {
         firstName: string;
         lastName: string;
     }
-}   
+}  
+
+const resolvers = {
+
+};
+
+export default resolvers;
