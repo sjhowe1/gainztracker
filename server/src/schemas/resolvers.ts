@@ -1,5 +1,7 @@
 import { User, Exercise, Workout } from "../models/index";
 import { signToken, AuthenticationError } from "../utils/auth";
+import { Muscle } from "../types/muscle";
+import { Set } from "../types/set";
 
 interface User {
     _id: string;
@@ -53,7 +55,24 @@ interface Context {
     user?: User;
 }
 
-const Resolvers = {
+interface Exercise {
+    _id: string;
+    description: string;
+    primaryMuscle: Muscle;
+    secondaryMuscles: Array<Muscle>;
+    video: any;
+}
+
+interface Workout {
+    _id: string;
+        description: string;
+        primaryMuscle: Muscle;
+        secondaryMuscles: Array<Muscle>;
+        exercises: Map<Exercise, Array<Set>>
+}
+
+
+const resolvers = {
   Query: {
       users: async (): Promise<User[]> => {
           return await User.find();
@@ -64,6 +83,7 @@ const Resolvers = {
       workouts: async (): Promise<Workout[]> => {
             return await Workout.find();
         }
-               
+  } 
+}          
         
 export default resolvers;
