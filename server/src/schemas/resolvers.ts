@@ -43,12 +43,14 @@ interface AddExerciseArgs {
     userId: string;
     workout: string;
     exercise: string;
+    workoutId: string;
 }
 
 interface RemoveExerciseArgs {
     userId: string;
     workout: string;
     exercise: string;
+    workoutId: string;
 }
 
 interface Context {
@@ -74,8 +76,8 @@ interface WorkoutArgs {
     workoutId: string;
 }
 
-interface ExcerciseArgs {
-    excerciseId: string;
+interface ExerciseArgs {
+    exerciseId: string;
 }
 const resolvers = {
     Query: {
@@ -94,8 +96,8 @@ const resolvers = {
         exercises: async (): Promise<Exercise[]> => {
             return await Exercise.find();
         },
-        exercise: async (_parent: any, { excerciseId }: ExcerciseArgs): Promise<Exercise | null> => {
-            return await Exercise.findOne({ _id: excerciseId });
+        exercise: async (_parent: any, { exerciseId }: ExerciseArgs): Promise<Exercise | null> => {
+            return await Exercise.findOne({ _id: exerciseId });
         },
         me: async (_parent: any, _args: any, context: Context): Promise<User | null> => {
             if (context.user) {
@@ -103,7 +105,84 @@ const resolvers = {
             }
             throw AuthenticationError;
           },
+    },
+    Mutation: {
+        addUser: async (_parent: any, { input }: AddUserArgs): Promise<{ token: string; user: User }> => {
+            const user = await User.create(input);
+            const token = signToken(user.username, user.email, user._id);
+            return { token, user };
+        },
+        removeUser: async (_parent: any, _args: any, context: Context): Promise<User | null> => {
+            if (context.user) {
+              return await User.findOneAndDelete({ _id: context.user._id });
+            }
+            throw AuthenticationError;
+          },
+        addWorkout: async (_parent: any, { userId, workout }: AddWorkoutArgs, context: Context): Promise<User | null> => {
+            if (context.user) {
+              return await User.findOneAndUpdate(
+                { _id: userId },
+                {
+                  $addToSet: { workouts: workout },
+                },
+                {
+                  new: true,
+                  runValidators: true,
+                }
+              );
+            }
+            throw AuthenticationError;
+          },
+          removeWorkout: async (_parent: any, { workout }: RemoveWorkoutArgs, context: Context): Promise<User | null> => {
+            if (context.user) {
+              return await User.findOneAndUpdate(
+                { _id: context.user._id },
+                { $pull: { workouts: workout } },
+                { new: true }
+              );
+            }
+            throw AuthenticationError;
+          },
+        },
+        addExercise: async (_parent: any, { workoutId, exercise }: AddExerciseArgs, context: Context): Promise<Exercise | null> => {
+            if (context.user?.workouts.includes(workoutId)) {
+              return await Workout.findOneAndUpdate(
+                { _id: workoutId },
+                {
+                  $addToSet: { exercises: exercise },
+                },
+                {
+                  new: true,
+                  runValidators: true,
+                }
+              );
+            }
+            throw AuthenticationError;
+          },
+          removeExercise: async (_parent: any, { workoutId, exercise }: RemoveExerciseArgs, context: Context): Promise<Exercise | null> => {
+            if (context.user?.workouts.includes(workoutId)) {
+              return await User.findOneAndUpdate(
+                { _id: context.user._id },
+                { $pull: { exercises: exercise } },
+                { new: true }
+              );
+            }
+            throw AuthenticationError;
+          },
+    
+        login: async (_parent: any, { email, password }: { email: string; password: string }): Promise<{ token: string; user: User }> => {
+            const user = await User.findOne({ email });
+            if (!user) {
+              throw AuthenticationError;
+            }
+            const correctPw = await user.isCorrectPassword(password);
+            if (!correctPw) {
+              throw AuthenticationError;
+            }
+            const token = signToken(user.username, user.email, user._id);
+            return { token, user };
+          },
     }
-}
+
 
 export default resolvers;
