@@ -30,9 +30,9 @@ interface AddUserArgs {
 }
 
 interface AddWorkoutArgs {
-     userId: string;
-     workout: string;
-    }
+    userId: string;
+    workout: string;
+}
 
 interface RemoveWorkoutArgs {
     userId: string;
@@ -65,25 +65,45 @@ interface Exercise {
 
 interface Workout {
     _id: string;
-        description: string;
-        primaryMuscle: Muscle;
-        secondaryMuscles: Array<Muscle>;
-        exercises: Map<Exercise, Array<Set>>
+    description: string;
+    primaryMuscle: Muscle;
+    secondaryMuscles: Array<Muscle>;
+    exercises: Map<Exercise, Array<Set>>
+}
+interface WorkoutArgs {
+    workoutId: string;
 }
 
-
+interface ExcerciseArgs {
+    excerciseId: string;
+}
 const resolvers = {
-  Query: {
-      users: async (): Promise<User[]> => {
-          return await User.find();
-      },
-      user: async (_parent: any, { userId }: UserArgs): Promise<User | null> => {
-          return await User.findOne ({ _id: userId });
-      },
-      workouts: async (): Promise<Workout[]> => {
+    Query: {
+        users: async (): Promise<User[]> => {
+            return await User.find();
+        },
+        user: async (_parent: any, { userId }: UserArgs): Promise<User | null> => {
+            return await User.findOne({ _id: userId });
+        },
+        workouts: async (): Promise<Workout[]> => {
             return await Workout.find();
-        }
-  } 
-}          
-        
+        },
+        workout: async (_parent: any, { workoutId }: WorkoutArgs): Promise<Workout | null> => {
+            return await Workout.findOne({ _id: workoutId });
+        },
+        exercises: async (): Promise<Exercise[]> => {
+            return await Exercise.find();
+        },
+        exercise: async (_parent: any, { excerciseId }: ExcerciseArgs): Promise<Exercise | null> => {
+            return await Exercise.findOne({ _id: excerciseId });
+        },
+        me: async (_parent: any, _args: any, context: Context): Promise<User | null> => {
+            if (context.user) {
+              return await User.findOne({ _id: context.user._id });
+            }
+            throw AuthenticationError;
+          },
+    }
+}
+
 export default resolvers;
