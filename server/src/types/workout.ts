@@ -8,5 +8,5 @@ export interface IWorkout extends Document{
     description: string;
     primaryMuscle: Muscle;
     secondaryMuscles: Array<Muscle>;
-    exercises: Map<IExercise, Array<Set>>
+    exercises: Map<IExercise, Array<Set>>;
 }
