@@ -109,6 +109,22 @@ const typeDefs = `
         muscle(muscleID: ID!): Muscle
         set(setID: ID!): Set
     }
+
+    type Mutation {
+        addUser(input: UserInput!): Auth
+        login(email: String!, password: String!): Auth
+
+        addWorkout(userId: ID!, workout: WorkoutInput!): User
+        addExercise(workoutId: ID!, exercise: ExerciseInput!): Workout
+        addSet(exerciseId: ID!, set: SetInput!): Exercise
+        addVideo(exerciseId: ID!, video: VideoInput!)
+
+        removeUser: User
+        removeWorkout(workoutId: ID!): User
+        removeExercise(exerciseId: ID!): Workout
+        removeSet(setId: ID!): Exercise
+        removeVideo(videoId: ID!): Exercise
+    }
 `;
 
 export default typeDefs;
