@@ -1,0 +1,129 @@
+[
+    {
+      "firstName": "Brian",
+      "lastName": "Kernighan",
+      "username": "bkernighan",
+      "goalWeight": 170,
+      "currentWeight": 175,
+      "bodyFatPercentage": 0.15,
+      "email": "bkernighan@techfriends.dev",
+      "password": "password01",
+      "workouts": ["AWK", "AMPL", "Unix"]
+    },
+    {
+      "firstName": "Max",
+      "lastName": "Kanat-Alexander",
+      "username": "mkanat-alexander",
+      "goalWeight": 160,
+      "currentWeight": 165,
+      "bodyFatPercentage": 0.12,
+      "email": "mkanatalexander@techfriends.dev",
+      "password": "password02",
+      "workouts": ["Java", "Perl", "Apache", "Python"]
+    },
+    {
+      "firstName": "Amiko",
+      "lastName": "Matsumoto",
+      "username": "amatsumoto",
+      "goalWeight": 150,
+      "currentWeight": 155,
+      "bodyFatPercentage": 0.10,
+      "email": "amiko@techfriends.dev",
+      "password": "password03",
+      "workouts": ["NodeJS", "MySQL", "MongoDB", "React", "CSS-in-JS"]
+    },
+    {
+      "firstName": "Kent",
+      "lastName": "Beck",
+      "username": "kbeck",
+      "goalWeight": 180,
+      "currentWeight": 185,
+      "bodyFatPercentage": 0.18,
+      "email": "kbeck@techfriends.dev",
+      "password": "password04",
+      "workouts": [
+        "Test-Driven Development",
+        "Extreme Programming",
+        "Software Design Patterns",
+        "JUnit"
+      ]
+    },
+    {
+      "firstName": "Edward",
+      "lastName": "Berard",
+      "username": "eberard",
+      "goalWeight": 175,
+      "currentWeight": 180,
+      "bodyFatPercentage": 0.16,
+      "email": "evberard@techfriends.dev",
+      "password": "password05",
+      "workouts": ["Object-Oriented Design"]
+    },
+    {
+      "firstName": "Alan",
+      "lastName": "Kay",
+      "username": "akay",
+      "goalWeight": 165,
+      "currentWeight": 170,
+      "bodyFatPercentage": 0.14, 
+      "email": "akay@techfriends.dev",
+      "password": "password06",
+      "workouts": [
+        "Graphical User Interface (GUI) Design",
+        "Jazz Guitar",
+        "Education"
+      ]
+    },
+    {
+      "firstName": "C.A.R. Hoare",
+      "lastName": "Hoare",
+      "username": "choare",
+      "goalWeight": 155,
+      "currentWeight": 160,
+      "bodyFatPercentage": 0.13,  
+      "email": "choare@techfriends.dev",
+      "password": "password07",
+      "workouts": ["Algorithms", "Quicksort", "Hoare Logic"]
+    },
+    {
+      "firstName": "David Thomas",
+      "lastName": "Thomas",
+      "username": "dthomas",
+      "goalWeight": 145,
+      "currentWeight": 150,
+      "bodyFatPercentage": 0.11,
+      "email": "dthomas@techfriends.dev",
+      "password": "password08",
+      "workouts": ["Author", "Code Kata", "Ruby", "Pragmatic Programming"]
+    },
+    {
+      "firstName": "Donald",
+      "lastName": "Knuth",
+      "username": "dknuth",
+      "goalWeight": 140,
+      "currentWeight": 145,
+      "bodyFatPercentage": 0.09,
+      "email": "dknuth@techfriends.dev",
+      "password": "password09",
+      "workouts": ["TeX Computer Typesetting", "Algorithms", "Author"]
+    },
+    {
+      "firstName": "Lernantino",
+      "lastName": "",
+      "username": "lernantino",
+      "goalWeight": 135,
+      "currentWeight": 140,
+      "bodyFatPercentage": 0.08,
+      "email": "lernantino@techfriends.dev",
+      "password": "password10",
+      "workouts": [
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "Design Systems",
+        "Typescript",
+        "PWAs"
+      ]
+    }
+  ]
+  
