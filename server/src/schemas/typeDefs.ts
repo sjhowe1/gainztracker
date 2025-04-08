@@ -93,6 +93,21 @@ const typeDefs = `
         number: Int!
         reps: Int!
     }
+
+    type Query {
+        users: [User]!
+        user(userId: ID!): User
+        me: User
+        workouts: [Workout]!
+        workout(workoutId: ID!): Workout
+        exercises: [Exercise]!
+        exercise(exerciseId: ID!): Exercise
+        videos: [Video]!
+        video(videoID: ID!): Video
+        muscles: [Muscle]!
+        muscle(muscleID: ID!): Muscle
+        set(setID: ID!): Set
+    }
 `;
 
 export default typeDefs;
