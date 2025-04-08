@@ -11,5 +11,6 @@ export interface IUser extends Document {
     workouts: Array<IWorkout>;
     currentWeight: number;
     goalWeight: number;
+    bodyFatPercentage: number;
 
 }
