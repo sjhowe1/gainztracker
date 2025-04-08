@@ -1,6 +1,5 @@
 import { IExercise } from "./exercise";
 import { Muscle } from "./muscle";
-import { Set } from "./set";
 import { Document } from "mongoose";
 
 export interface IWorkout extends Document{
@@ -9,5 +8,5 @@ export interface IWorkout extends Document{
     description: string;
     primaryMuscle: Muscle;
     secondaryMuscles: Array<Muscle>;
-    exercises: Map<IExercise, Array<Set>>;
+    exercises: Array<IExercise>
 }

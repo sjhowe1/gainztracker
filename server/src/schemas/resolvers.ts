@@ -6,7 +6,7 @@ import { Set } from "../types/set";
 interface User {
     _id: string;
     username: string;
-    mail: string;
+    email: string;
     password: string;
     workouts: string[];
     firstName: string;
