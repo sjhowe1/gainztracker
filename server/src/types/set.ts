@@ -1,5 +1,5 @@
 export type Set = {
-    numberOf: number;
+    setNumber: number;
     reps: number;
     weight: number;
 }
