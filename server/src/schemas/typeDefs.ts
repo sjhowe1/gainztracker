@@ -33,8 +33,9 @@ const typeDefs = `
 
     type Set {
         _id: ID
-        number: Int!
+        setNumber: Int!
         reps: Int!
+        weight: Int!
     }
 
     type Exercise {
