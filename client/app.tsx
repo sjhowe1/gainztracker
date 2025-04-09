@@ -14,38 +14,50 @@ const App = () => {
     };
 
     return (
-        <div style={{ textAlign: 'center', padding: '20px' }}>
-            <h1>Welcome to the Gainz Tracker</h1>
+        <div className="text-center p-5">
+            <h1 className="text-3xl font-bold mb-4">Welcome to the Gainz Tracker</h1>
             <div>
                 <button 
                     onClick={() => setIsRegisterModalOpen(true)} 
-                    style={{ margin: '10px', padding: '10px' }}>
+                    className="m-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+                >
                     Register
                 </button>
                 <button 
                     onClick={() => setIsLoginModalOpen(true)} 
-                    style={{ margin: '10px', padding: '10px' }}>
+                    className="m-2 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition"
+                >
                     Login
                 </button>
             </div>
 
             {/* Modals */}
             {isRegisterModalOpen && (
-                <div style={modalStyle}>
-                    <div style={modalContentStyle}>
-                        <h2>Register</h2>
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+                    <div className="bg-white p-6 rounded-lg w-80 text-center">
+                        <h2 className="text-xl font-semibold mb-4">Register</h2>
                         <Register />
-                        <button onClick={closeModal} style={closeButtonStyle}>Close</button>
+                        <button 
+                            onClick={closeModal} 
+                            className="mt-4 px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded transition"
+                        >
+                            Close
+                        </button>
                     </div>
                 </div>
             )}
 
             {isLoginModalOpen && (
-                <div style={modalStyle}>
-                    <div style={modalContentStyle}>
-                        <h2>Login</h2>
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+                    <div className="bg-white p-6 rounded-lg w-80 text-center">
+                        <h2 className="text-xl font-semibold mb-4">Login</h2>
                         <Login />
-                        <button onClick={closeModal} style={closeButtonStyle}>Close</button>
+                        <button 
+                            onClick={closeModal} 
+                            className="mt-4 px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded transition"
+                        >
+                            Close
+                        </button>
                     </div>
                 </div>
             )}
@@ -55,33 +67,6 @@ const App = () => {
             </Routes>
         </div>
     );
-};
-
-const modalStyle = {
-    position: 'fixed' as 'fixed',
-    top: '0',
-    left: '0',
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    zIndex: '1000',
-};
-
-const modalContentStyle = {
-    backgroundColor: 'white',
-    padding: '20px',
-    borderRadius: '10px',
-    width: '300px',
-    textAlign: 'center' as 'center',
-};
-
-const closeButtonStyle = {
-    marginTop: '20px',
-    padding: '10px',
-    cursor: 'pointer',
 };
 
 export default App;
