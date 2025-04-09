@@ -1,1 +1,1 @@
-export type Muscle = "Chest"|"Triceps"|"Biceps"|"Glutes"|"Hamstrings"|"Quads"|"Calves"|"Back"|"Shoulders";
+export type Muscle = "chest"|"triceps"|"biceps"|"glutes"|"hamstrings"|"quads"|"calves"|"back"|"shoulders"|"cardio";
