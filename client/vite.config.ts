@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-
+import tailwindcss from '@tailwindcss/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
@@ -13,6 +13,9 @@ export default defineConfig({
       },
     },
   },
+ plugins: [
+      tailwindcss(),
+    ],
   optimizeDeps: {
     include: ['react', 'react-dom',],
   },
