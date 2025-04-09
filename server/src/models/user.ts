@@ -1,6 +1,7 @@
 import {Schema, model} from 'mongoose';
 import bcrypt from 'bcrypt';
 import { IUser } from '../types/user';
+import { IWorkout } from '../types/workout';
 
 const userSchema = new Schema<IUser> (
     {
@@ -36,7 +37,7 @@ const userSchema = new Schema<IUser> (
         },
         workouts: [
             {
-                type: Object
+                type: Object as unknown as IWorkout
             }
         ],
         currentWeight: {
@@ -45,6 +46,11 @@ const userSchema = new Schema<IUser> (
             trim: true
         },
         goalWeight: {
+            type: Number,
+            required: false,
+            trim: true
+        },
+        bodyFatPercentage: {
             type: Number,
             required: false,
             trim: true

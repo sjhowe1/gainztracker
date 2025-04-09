@@ -2,13 +2,14 @@ import { User, Exercise, Workout } from "../models/index";
 import { signToken, AuthenticationError } from "../utils/auth";
 import { Muscle } from "../types/muscle";
 import { Set } from "../types/set";
+import { IWorkout } from "../types/workout";
 
 interface User {
     _id: string;
     username: string;
     email: string;
     password: string;
-    workouts: string[];
+    workouts: IWorkout[];
     firstName: string;
     lastName: string;
     currentWeight: number;
@@ -145,7 +146,7 @@ const resolvers = {
           },
         },
         addExercise: async (_parent: any, { workoutId, exercise }: AddExerciseArgs, context: Context): Promise<Exercise | null> => {
-            if (context.user?.workouts.includes(workoutId)) {
+            if (context.user?.workouts.filter(workout => workout._id === workoutId)) {
               return await Workout.findOneAndUpdate(
                 { _id: workoutId },
                 {
@@ -160,7 +161,7 @@ const resolvers = {
             throw AuthenticationError;
           },
           removeExercise: async (_parent: any, { workoutId, exercise }: RemoveExerciseArgs, context: Context): Promise<Exercise | null> => {
-            if (context.user?.workouts.includes(workoutId)) {
+            if (context.user?.workouts.filter(workout => workout._id === workoutId)) {
               return await User.findOneAndUpdate(
                 { _id: context.user._id },
                 { $pull: { exercises: exercise } },

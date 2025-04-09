@@ -1,0 +1,2118 @@
+[
+    {
+        "firstName": "Brian",
+        "lastName": "Kernighan",
+        "username": "bkernighan",
+        "goalWeight": 170,
+        "currentWeight": 175,
+        "bodyFatPercentage": 0.15,
+        "email": "bkernighan@techfriends.dev",
+        "password": "password01",
+        "workouts": [
+            {
+                "name": "Heavy Chest Day",
+                "description": "Doing working sets up to 85% of my max",
+                "primaryMuscle": "chest",
+                "secondaryMuscles": ["triceps", "shoulders"],
+                "exercises": [
+                    {
+                        "name": "Flat Chest Press",
+                        "description": "traditional barbell bench",
+                        "primaryMuscle": "chest",
+                        "secondaryMuscles": ["triceps", "shoulders"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 8,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 8,
+                                "weight": 245
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 8,
+                                "weight": 265
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 8,
+                                "weight": 285
+                            }
+                        ],
+                        "video": {
+                            "name": "Flat Barbell Bench",
+                            "description": "Flat Barbell Bench",
+                            "url": "http://someHostServer.com/videos/flatBench.vid"
+                        }
+                    },
+                    {
+                        "name": "Incline DB Chest Press",
+                        "description": "DB chest press on inclined bench",
+                        "primaryMuscle": "chest",
+                        "secondaryMuscles": ["triceps", "shoulders"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 100
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 120
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 140
+                            }
+                        ],
+                        "video": {
+                            "name": "Incline DB Chest Press",
+                            "description": "Incline DB Chest Press",
+                            "url": "http://someHostServer.com/videos/dbChestInclineBench.vid"
+                        }
+                    },
+                    {
+                        "name": "Pec Dec Flies",
+                        "description": "Machine chest flies",
+                        "primaryMuscle": "chest",
+                        "secondaryMuscles": ["shoulders"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 150
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 180
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 210
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 240
+                            }
+                        ],
+                        "video": {
+                            "name": "Pec Dec Flies",
+                            "description": "Machine chest flies",
+                            "url": "http://someHostServer.com/videos/pecDecFlies.vid"
+                        }
+                    },
+                    {
+                        "name": "Decline Chest Press",
+                        "description": "Decline barbell bench",
+                        "primaryMuscle": "chest",
+                        "secondaryMuscles": ["triceps", "shoulders"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 265
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 285
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 305
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 325
+                            }
+                        ],
+                        "video": {
+                            "name": "Decline Bench",
+                            "description": "Decline chest press barbell bench",
+                            "url": "http://someHostServer.com/videos/declineBench.vid"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Quad Day",
+                "description": "Leg day primarily focused on quads with some glutes and hamstrings",
+                "primaryMuscle": "quads",
+                "secondaryMuscles": ["hamstrings", "glutes"],
+                "exercises": [
+                    {
+                        "name": "Leg Extensions",
+                        "description": "Leg Extensions",
+                        "primaryMuscle": "quads",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 15,
+                                "weight": 150
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 15,
+                                "weight": 180
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 15,
+                                "weight": 210
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 15,
+                                "weight": 240
+                            }
+                        ],
+                        "video": {
+                            "name": "Leg Extensions",
+                            "description": "Leg Extensions",
+                            "url": "http://someHostServer.com/videos/legExtension.vid"
+                        }
+                    },
+                    {
+                        "name": "Adductor Machine",
+                        "description": "Adductor Machine",
+                        "primaryMuscle": "quads",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 20,
+                                "weight": 100
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 20,
+                                "weight": 100
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 20,
+                                "weight": 100
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 20,
+                                "weight": 100
+                            }
+                        ],
+                        "video": {
+                            "name": "Adductor Machine",
+                            "description": "Adductor Machine",
+                            "url": "http://someHostServer.com/videos/adductorMachine.vid"
+                        }
+                    },
+                    {
+                        "name": "Hip Thrusters",
+                        "description": "Hip Thrusters",
+                        "primaryMuscle": "glutes",
+                        "secondaryMuscles": ["quads", "hamstrings"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 15,
+                                "weight": 150
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 15,
+                                "weight": 180
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 15,
+                                "weight": 210
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 15,
+                                "weight": 240
+                            }
+                        ],
+                        "video": {
+                            "name": "Hip Thrusters",
+                            "description": "Hip Thrusters on glute drive machine",
+                            "url": "http://someHostServer.com/videos/pecDecFlies.vid"
+                        }
+                    },
+                    {
+                        "name": "Seated Hamstring Curls",
+                        "description": "Seated Hamstring Curls",
+                        "primaryMuscle": "hamstrings",
+                        "secondaryMuscles": ["glutes"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 15,
+                                "weight": 90
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 15,
+                                "weight": 120
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 15,
+                                "weight": 150
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 15,
+                                "weight": 180
+                            }
+                        ],
+                        "video": {
+                            "name": "Seated Hamstring Curls",
+                            "description": "Seated Hamstring Curls",
+                            "url": "http://someHostServer.com/videos/seatedHamstringCurl.vid"
+                        }
+                    },
+                    {
+                        "name": "Barbell Squats",
+                        "description": "Seated Hamstring Curls",
+                        "primaryMuscle": "hamstrings",
+                        "secondaryMuscles": ["glutes"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 20,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 20,
+                                "weight": 315
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 20,
+                                "weight": 405
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 20,
+                                "weight": 495
+                            }
+                        ],
+                        "video": {
+                            "name": "Seated Hamstring Curls",
+                            "description": "Seated Hamstring Curls",
+                            "url": "http://someHostServer.com/videos/seatedHamstringCurl.vid"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "firstName": "Max",
+        "lastName": "Kanat-Alexander",
+        "username": "mkanat-alexander",
+        "goalWeight": 160,
+        "currentWeight": 165,
+        "bodyFatPercentage": 0.12,
+        "email": "mkanatalexander@techfriends.dev",
+        "password": "password02",
+        "workouts": [
+            {
+                "name": "Shoulders",
+                "description": "shoulders and triceps with a little bit of chest",
+                "primaryMuscle": "shoulders",
+                "secondaryMuscles": ["triceps", "chest"],
+                "exercises": [
+                    {
+                        "name": "DB Front Lateral Raises",
+                        "description": "traditional barbell bench",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 25
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 55
+                            }
+                        ],
+                        "video": {
+                            "name": "DB Front Lateral Raises",
+                            "description": "DB Front Lateral Raises",
+                            "url": "http://someHostServer.com/videos/dbFrontLateralRaises.vid"
+                        }
+                    },
+                    {
+                        "name": "DB Side Lateral Raises",
+                        "description": "DB Side Lateral Raises",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 15,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 15,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 15,
+                                "weight": 55
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 15,
+                                "weight": 65
+                            }
+                        ],
+                        "video": {
+                            "name": "DB Side Lateral Raises",
+                            "description": "DB Side Lateral Raises",
+                            "url": "http://someHostServer.com/videos/dbSideLateralRaises.vid"
+                        }
+                    },
+                    {
+                        "name": "Rear DB Shoulder Flies",
+                        "description": "Rear DB Shoulder Flies",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 12,
+                                "weight": 35
+                            }
+                        ],
+                        "video": {
+                            "name": "Rear DB Shoulder Flies",
+                            "description": "Rear DB Shoulder Flies",
+                            "url": "http://someHostServer.com/videos/rearDbShoulderFlies.vid"
+                        }
+                    },
+                    {
+                        "name": "Smith-Machine Shoulder Press",
+                        "description": "Smith-Machine Shoulder Press",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": ["triceps", "chest"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 225
+                            }
+                        ],
+                        "video": {
+                            "name": "Smith-Machine Shoulder Press",
+                            "description": "Smith-Machine Shoulder Press",
+                            "url": "http://someHostServer.com/videos/smithMachineShoulderPress.vid"
+                        }
+                    },
+                    {
+                        "name": "Tricep Pushdowns",
+                        "description": "Tricep Pushdowns",
+                        "primaryMuscle": "triceps",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 20,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 20,
+                                "weight": 100
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 20,
+                                "weight": 120
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 20,
+                                "weight": 140
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 20,
+                                "weight": 160
+                            }
+                        ],
+                        "video": {
+                            "name": "Tricep Pushdowns",
+                            "description": "Tricep Pushdowns",
+                            "url": "http://someHostServer.com/videos/tricepPushdowns.vid"
+                        }
+                    },
+                    {
+                        "name": "Incline DB Chest Press",
+                        "description": "Incline DB Chest Press",
+                        "primaryMuscle": "chest",
+                        "secondaryMuscles": ["triceps", "shoulders"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 80
+                            }
+                        ],
+                        "video": {
+                            "name": "Incline DB Chest Press",
+                            "description": "Incline DB Chest Press",
+                            "url": "http://someHostServer.com/videos/inclineDbBench.vid"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "firstName": "Amiko",
+        "lastName": "Matsumoto",
+        "username": "amatsumoto",
+        "goalWeight": 150,
+        "currentWeight": 155,
+        "bodyFatPercentage": 0.10,
+        "email": "amiko@techfriends.dev",
+        "password": "password03",
+        "workouts": [
+            {
+                "name": "Arms",
+                "description": "Biceps and Triceps",
+                "primaryMuscle": "biceps",
+                "secondaryMuscles": ["triceps"],
+                "exercises": [
+                    {
+                        "name": "DB Curls",
+                        "description": "traditional dumbbell curls",
+                        "primaryMuscle": "biceps",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 55
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 65
+                            }
+                        ],
+                        "video": {
+                            "name": "DB Curls",
+                            "description": "DB Curls",
+                            "url": "http://someHostServer.com/videos/dbCurls.vid"
+                        }
+                    },
+                    {
+                        "name": "Wide Straight Bar Curls",
+                        "description": "Barbell curls with a wide grip",
+                        "primaryMuscle": "biceps",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 15,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 15,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 15,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 15,
+                                "weight": 45
+                            }
+                        ],
+                        "video": {
+                            "name": "Wide Straight Bar Curls",
+                            "description": "Barbell curls with a wide grip",
+                            "url": "http://someHostServer.com/videos/dbSideLateralRaises.vid"
+                        }
+                    },
+                    {
+                        "name": "DB Hammer Curls",
+                        "description": "Dumbbell curls using nuetral grip",
+                        "primaryMuscle": "biceps",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 12,
+                                "weight": 35
+                            }
+                        ],
+                        "video": {
+                            "name": "DB Hammer Curls",
+                            "description": "Dumbbell curls using nuetral grip",
+                            "url": "http://someHostServer.com/videos/dbHammerCurls.vid"
+                        }
+                    },
+                    {
+                        "name": "Machine Preacher Curls",
+                        "description": "Machine Preacher Curls",
+                        "primaryMuscle": "biceps",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 115
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 115
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 115
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 115
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 115
+                            }
+                        ],
+                        "video": {
+                            "name": "Machine Preacher Curls",
+                            "description": "Machine Preacher Curls",
+                            "url": "http://someHostServer.com/videos/machinePreacherCurls.vid"
+                        }
+                    },
+                    {
+                        "name": "Tricep Pushdowns",
+                        "description": "Tricep Pushdowns",
+                        "primaryMuscle": "triceps",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 20,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 20,
+                                "weight": 100
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 20,
+                                "weight": 120
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 20,
+                                "weight": 140
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 20,
+                                "weight": 160
+                            }
+                        ],
+                        "video": {
+                            "name": "Tricep Pushdowns",
+                            "description": "Tricep Pushdowns",
+                            "url": "http://someHostServer.com/videos/tricepPushdowns.vid"
+                        }
+                    },
+                    {
+                        "name": "Tricep Extensions",
+                        "description": "Tricep Extensions",
+                        "primaryMuscle": "triceps",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 80
+                            }
+                        ],
+                        "video": {
+                            "name": "Tricep Extensions",
+                            "description": "Tricep Extensions",
+                            "url": "http://someHostServer.com/videos/tricepExtensions.vid"
+                        }
+                    },
+                    {
+                        "name": "Tricep Dips",
+                        "description": "Tricep Dips",
+                        "primaryMuscle": "triceps",
+                        "secondaryMuscles": ["chest"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 180
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 180
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 180
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 180
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 180
+                            }
+                        ],
+                        "video": {
+                            "name": "Tricep Dips",
+                            "description": "Tricep Dips",
+                            "url": "http://someHostServer.com/videos/tricepDips.vid"
+                        }
+                    },
+                    {
+                        "name": "Close Grip Bench",
+                        "description": "Traditional barbell bench with extremely narrow grip. Come down to where your tricep is parallel to the floor",
+                        "primaryMuscle": "triceps",
+                        "secondaryMuscles": ["chest"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 135
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 315
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 405
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 20,
+                                "weight": 225
+                            }
+                        ],
+                        "video": {
+                            "name": "Close Grip Bench",
+                            "description": "Traditional barbell bench with extremely narrow grip. Come down to where your tricep is parallel to the floor",
+                            "url": "http://someHostServer.com/videos/tricepExtensions.vid"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "firstName": "Kent",
+        "lastName": "Beck",
+        "username": "kbeck",
+        "goalWeight": 180,
+        "currentWeight": 185,
+        "bodyFatPercentage": 0.18,
+        "email": "kbeck@techfriends.dev",
+        "password": "password04",
+        "workouts": [
+            {
+                "name": "Leg Day - Hamstrings & Glutes",
+                "description": "Leg day focused on hamstrings and glutes, and little of quads",
+                "primaryMuscle": "hamstrings",
+                "secondaryMuscles": ["glutes", "quads"],
+                "exercises": [
+                    {
+                        "name": "Prone Leg Curls",
+                        "description": "Laying leg curls",
+                        "primaryMuscle": "hamstrings",
+                        "secondaryMuscles": ["glutes", "quads"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 90
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 90
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 110
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 130
+                            }
+                        ],
+                        "video": {
+                            "name": "Prone Leg Curls",
+                            "description": "Laying leg curls",
+                            "url": "http://someHostServer.com/videos/proneLegCurls.vid"
+                        }
+                    },
+                    {
+                        "name": "RDLs",
+                        "description": "Romanian deadlifts",
+                        "primaryMuscle": "hamstrings",
+                        "secondaryMuscles": ["glutes"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 15,
+                                "weight": 135
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 15,
+                                "weight": 145
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 15,
+                                "weight": 155
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 15,
+                                "weight": 165
+                            }
+                        ],
+                        "video": {
+                            "name": "RDLs",
+                            "description": "Romanian deadlifts",
+                            "url": "http://someHostServer.com/videos/rdls.vid"
+                        }
+                    },
+                    {
+                        "name": "Machine Glute Kickbacks",
+                        "description": "Machine Glute Kickbacks",
+                        "primaryMuscle": "glutes",
+                        "secondaryMuscles": ["hamstrings"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 12,
+                                "weight": 35
+                            }
+                        ],
+                        "video": {
+                            "name": "Machine Glute Kickbacks",
+                            "description": "Machine Glute Kickbacks",
+                            "url": "http://someHostServer.com/videos/machineGluteKickbacks.vid"
+                        }
+                    },
+                    {
+                        "name": "Machine Abductors",
+                        "description": "Machine Abductors",
+                        "primaryMuscle": "glutes",
+                        "secondaryMuscles": ["quads"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 155
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 155
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 155
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 155
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 155
+                            }
+                        ],
+                        "video": {
+                            "name": "Machine Abductors",
+                            "description": "Machine Abductors",
+                            "url": "http://someHostServer.com/videos/machineAbductors.vid"
+                        }
+                    },
+                    {
+                        "name": "BarBell Sumo Squats",
+                        "description": "BarBell Sumo Squats",
+                        "primaryMuscle": "quads",
+                        "secondaryMuscles": ["glutes", "hamstrings"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 20,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 20,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 20,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 20,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 20,
+                                "weight": 225
+                            }
+                        ],
+                        "video": {
+                            "name": "BarBell Sumo Squats",
+                            "description": "BarBell Sumo Squats",
+                            "url": "http://someHostServer.com/videos/barBellSumoSquats.vid"
+                        }
+                    },
+                    {
+                        "name": "Sumo Deadlifts",
+                        "description": "Sumo Deadlifts",
+                        "primaryMuscle": "hamstrings",
+                        "secondaryMuscles": ["glutes"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 80
+                            }
+                        ],
+                        "video": {
+                            "name": "Sumo Deadlifts",
+                            "description": "Sumo Deadlifts",
+                            "url": "http://someHostServer.com/videos/sumoDeadlifts.vid"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "firstName": "Edward",
+        "lastName": "Berard",
+        "username": "eberard",
+        "goalWeight": 175,
+        "currentWeight": 180,
+        "bodyFatPercentage": 0.16,
+        "email": "evberard@techfriends.dev",
+        "password": "password05",
+        "workouts": [
+            {
+                "name": "Active Recovery Day",
+                "description": "cardio only day",
+                "primaryMuscle": "cardio",
+                "secondaryMuscles": [],
+                "exercises": [
+                    {
+                        "name": "Stair Master",
+                        "description": "Stair Master",
+                        "primaryMuscle": "cardio",
+                        "secondaryMuscles": ["glutes", "hamstrings", "quads"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 1,
+                                "weight": 60
+                            }
+                        ],
+                        "video": {
+                            "name": "Stair Master",
+                            "description": "Stair Master",
+                            "url": "http://someHostServer.com/videos/stairMaster.vid"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "firstName": "Alan",
+        "lastName": "Kay",
+        "username": "akay",
+        "goalWeight": 165,
+        "currentWeight": 170,
+        "bodyFatPercentage": 0.14,
+        "email": "akay@techfriends.dev",
+        "password": "password06",
+        "workouts": [
+            {
+                "name": "Shoulders",
+                "description": "shoulders and triceps with a little bit of chest",
+                "primaryMuscle": "shoulders",
+                "secondaryMuscles": ["triceps", "chest"],
+                "exercises": [
+                    {
+                        "name": "DB Front Lateral Raises",
+                        "description": "traditional barbell bench",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 25
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 55
+                            }
+                        ],
+                        "video": {
+                            "name": "DB Front Lateral Raises",
+                            "description": "DB Front Lateral Raises",
+                            "url": "http://someHostServer.com/videos/dbFrontLateralRaises.vid"
+                        }
+                    },
+                    {
+                        "name": "DB Side Lateral Raises",
+                        "description": "DB Side Lateral Raises",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 15,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 15,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 15,
+                                "weight": 55
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 15,
+                                "weight": 65
+                            }
+                        ],
+                        "video": {
+                            "name": "DB Side Lateral Raises",
+                            "description": "DB Side Lateral Raises",
+                            "url": "http://someHostServer.com/videos/dbSideLateralRaises.vid"
+                        }
+                    },
+                    {
+                        "name": "Rear DB Shoulder Flies",
+                        "description": "Rear DB Shoulder Flies",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 12,
+                                "weight": 35
+                            }
+                        ],
+                        "video": {
+                            "name": "Rear DB Shoulder Flies",
+                            "description": "Rear DB Shoulder Flies",
+                            "url": "http://someHostServer.com/videos/rearDbShoulderFlies.vid"
+                        }
+                    },
+                    {
+                        "name": "Smith-Machine Shoulder Press",
+                        "description": "Smith-Machine Shoulder Press",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": ["triceps", "chest"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 225
+                            }
+                        ],
+                        "video": {
+                            "name": "Smith-Machine Shoulder Press",
+                            "description": "Smith-Machine Shoulder Press",
+                            "url": "http://someHostServer.com/videos/smithMachineShoulderPress.vid"
+                        }
+                    },
+                    {
+                        "name": "Tricep Pushdowns",
+                        "description": "Tricep Pushdowns",
+                        "primaryMuscle": "triceps",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 20,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 20,
+                                "weight": 100
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 20,
+                                "weight": 120
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 20,
+                                "weight": 140
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 20,
+                                "weight": 160
+                            }
+                        ],
+                        "video": {
+                            "name": "Tricep Pushdowns",
+                            "description": "Tricep Pushdowns",
+                            "url": "http://someHostServer.com/videos/tricepPushdowns.vid"
+                        }
+                    },
+                    {
+                        "name": "Incline DB Chest Press",
+                        "description": "Incline DB Chest Press",
+                        "primaryMuscle": "chest",
+                        "secondaryMuscles": ["triceps", "shoulders"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 80
+                            }
+                        ],
+                        "video": {
+                            "name": "Incline DB Chest Press",
+                            "description": "Incline DB Chest Press",
+                            "url": "http://someHostServer.com/videos/inclineDbBench.vid"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "firstName": "C.A.R. Hoare",
+        "lastName": "Hoare",
+        "username": "choare",
+        "goalWeight": 155,
+        "currentWeight": 160,
+        "bodyFatPercentage": 0.13,
+        "email": "choare@techfriends.dev",
+        "password": "password07",
+        "workouts": [
+            {
+                "name": "Shoulders",
+                "description": "shoulders and triceps with a little bit of chest",
+                "primaryMuscle": "shoulders",
+                "secondaryMuscles": ["triceps", "chest"],
+                "exercises": [
+                    {
+                        "name": "DB Front Lateral Raises",
+                        "description": "traditional barbell bench",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 25
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 55
+                            }
+                        ],
+                        "video": {
+                            "name": "DB Front Lateral Raises",
+                            "description": "DB Front Lateral Raises",
+                            "url": "http://someHostServer.com/videos/dbFrontLateralRaises.vid"
+                        }
+                    },
+                    {
+                        "name": "DB Side Lateral Raises",
+                        "description": "DB Side Lateral Raises",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 15,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 15,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 15,
+                                "weight": 55
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 15,
+                                "weight": 65
+                            }
+                        ],
+                        "video": {
+                            "name": "DB Side Lateral Raises",
+                            "description": "DB Side Lateral Raises",
+                            "url": "http://someHostServer.com/videos/dbSideLateralRaises.vid"
+                        }
+                    },
+                    {
+                        "name": "Rear DB Shoulder Flies",
+                        "description": "Rear DB Shoulder Flies",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 12,
+                                "weight": 35
+                            }
+                        ],
+                        "video": {
+                            "name": "Rear DB Shoulder Flies",
+                            "description": "Rear DB Shoulder Flies",
+                            "url": "http://someHostServer.com/videos/rearDbShoulderFlies.vid"
+                        }
+                    },
+                    {
+                        "name": "Smith-Machine Shoulder Press",
+                        "description": "Smith-Machine Shoulder Press",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": ["triceps", "chest"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 225
+                            }
+                        ],
+                        "video": {
+                            "name": "Smith-Machine Shoulder Press",
+                            "description": "Smith-Machine Shoulder Press",
+                            "url": "http://someHostServer.com/videos/smithMachineShoulderPress.vid"
+                        }
+                    },
+                    {
+                        "name": "Tricep Pushdowns",
+                        "description": "Tricep Pushdowns",
+                        "primaryMuscle": "triceps",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 20,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 20,
+                                "weight": 100
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 20,
+                                "weight": 120
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 20,
+                                "weight": 140
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 20,
+                                "weight": 160
+                            }
+                        ],
+                        "video": {
+                            "name": "Tricep Pushdowns",
+                            "description": "Tricep Pushdowns",
+                            "url": "http://someHostServer.com/videos/tricepPushdowns.vid"
+                        }
+                    },
+                    {
+                        "name": "Incline DB Chest Press",
+                        "description": "Incline DB Chest Press",
+                        "primaryMuscle": "chest",
+                        "secondaryMuscles": ["triceps", "shoulders"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 80
+                            }
+                        ],
+                        "video": {
+                            "name": "Incline DB Chest Press",
+                            "description": "Incline DB Chest Press",
+                            "url": "http://someHostServer.com/videos/inclineDbBench.vid"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "firstName": "David Thomas",
+        "lastName": "Thomas",
+        "username": "dthomas",
+        "goalWeight": 145,
+        "currentWeight": 150,
+        "bodyFatPercentage": 0.11,
+        "email": "dthomas@techfriends.dev",
+        "password": "password08",
+        "workouts": [
+            {
+                "name": "Shoulders",
+                "description": "shoulders and triceps with a little bit of chest",
+                "primaryMuscle": "shoulders",
+                "secondaryMuscles": ["triceps", "chest"],
+                "exercises": [
+                    {
+                        "name": "DB Front Lateral Raises",
+                        "description": "traditional barbell bench",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 25
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 55
+                            }
+                        ],
+                        "video": {
+                            "name": "DB Front Lateral Raises",
+                            "description": "DB Front Lateral Raises",
+                            "url": "http://someHostServer.com/videos/dbFrontLateralRaises.vid"
+                        }
+                    },
+                    {
+                        "name": "DB Side Lateral Raises",
+                        "description": "DB Side Lateral Raises",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 15,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 15,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 15,
+                                "weight": 55
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 15,
+                                "weight": 65
+                            }
+                        ],
+                        "video": {
+                            "name": "DB Side Lateral Raises",
+                            "description": "DB Side Lateral Raises",
+                            "url": "http://someHostServer.com/videos/dbSideLateralRaises.vid"
+                        }
+                    },
+                    {
+                        "name": "Rear DB Shoulder Flies",
+                        "description": "Rear DB Shoulder Flies",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 12,
+                                "weight": 35
+                            }
+                        ],
+                        "video": {
+                            "name": "Rear DB Shoulder Flies",
+                            "description": "Rear DB Shoulder Flies",
+                            "url": "http://someHostServer.com/videos/rearDbShoulderFlies.vid"
+                        }
+                    },
+                    {
+                        "name": "Smith-Machine Shoulder Press",
+                        "description": "Smith-Machine Shoulder Press",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": ["triceps", "chest"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 225
+                            }
+                        ],
+                        "video": {
+                            "name": "Smith-Machine Shoulder Press",
+                            "description": "Smith-Machine Shoulder Press",
+                            "url": "http://someHostServer.com/videos/smithMachineShoulderPress.vid"
+                        }
+                    },
+                    {
+                        "name": "Tricep Pushdowns",
+                        "description": "Tricep Pushdowns",
+                        "primaryMuscle": "triceps",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 20,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 20,
+                                "weight": 100
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 20,
+                                "weight": 120
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 20,
+                                "weight": 140
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 20,
+                                "weight": 160
+                            }
+                        ],
+                        "video": {
+                            "name": "Tricep Pushdowns",
+                            "description": "Tricep Pushdowns",
+                            "url": "http://someHostServer.com/videos/tricepPushdowns.vid"
+                        }
+                    },
+                    {
+                        "name": "Incline DB Chest Press",
+                        "description": "Incline DB Chest Press",
+                        "primaryMuscle": "chest",
+                        "secondaryMuscles": ["triceps", "shoulders"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 80
+                            }
+                        ],
+                        "video": {
+                            "name": "Incline DB Chest Press",
+                            "description": "Incline DB Chest Press",
+                            "url": "http://someHostServer.com/videos/inclineDbBench.vid"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "firstName": "Donald",
+        "lastName": "Knuth",
+        "username": "dknuth",
+        "goalWeight": 140,
+        "currentWeight": 145,
+        "bodyFatPercentage": 0.09,
+        "email": "dknuth@techfriends.dev",
+        "password": "password09",
+        "workouts": [
+            {
+                "name": "Shoulders",
+                "description": "shoulders and triceps with a little bit of chest",
+                "primaryMuscle": "shoulders",
+                "secondaryMuscles": ["triceps", "chest"],
+                "exercises": [
+                    {
+                        "name": "DB Front Lateral Raises",
+                        "description": "traditional barbell bench",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 25
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 55
+                            }
+                        ],
+                        "video": {
+                            "name": "DB Front Lateral Raises",
+                            "description": "DB Front Lateral Raises",
+                            "url": "http://someHostServer.com/videos/dbFrontLateralRaises.vid"
+                        }
+                    },
+                    {
+                        "name": "DB Side Lateral Raises",
+                        "description": "DB Side Lateral Raises",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 15,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 15,
+                                "weight": 45
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 15,
+                                "weight": 55
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 15,
+                                "weight": 65
+                            }
+                        ],
+                        "video": {
+                            "name": "DB Side Lateral Raises",
+                            "description": "DB Side Lateral Raises",
+                            "url": "http://someHostServer.com/videos/dbSideLateralRaises.vid"
+                        }
+                    },
+                    {
+                        "name": "Rear DB Shoulder Flies",
+                        "description": "Rear DB Shoulder Flies",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 12,
+                                "weight": 35
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 12,
+                                "weight": 35
+                            }
+                        ],
+                        "video": {
+                            "name": "Rear DB Shoulder Flies",
+                            "description": "Rear DB Shoulder Flies",
+                            "url": "http://someHostServer.com/videos/rearDbShoulderFlies.vid"
+                        }
+                    },
+                    {
+                        "name": "Smith-Machine Shoulder Press",
+                        "description": "Smith-Machine Shoulder Press",
+                        "primaryMuscle": "shoulders",
+                        "secondaryMuscles": ["triceps", "chest"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 225
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 225
+                            }
+                        ],
+                        "video": {
+                            "name": "Smith-Machine Shoulder Press",
+                            "description": "Smith-Machine Shoulder Press",
+                            "url": "http://someHostServer.com/videos/smithMachineShoulderPress.vid"
+                        }
+                    },
+                    {
+                        "name": "Tricep Pushdowns",
+                        "description": "Tricep Pushdowns",
+                        "primaryMuscle": "triceps",
+                        "secondaryMuscles": [],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 20,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 20,
+                                "weight": 100
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 20,
+                                "weight": 120
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 20,
+                                "weight": 140
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 20,
+                                "weight": 160
+                            }
+                        ],
+                        "video": {
+                            "name": "Tricep Pushdowns",
+                            "description": "Tricep Pushdowns",
+                            "url": "http://someHostServer.com/videos/tricepPushdowns.vid"
+                        }
+                    },
+                    {
+                        "name": "Incline DB Chest Press",
+                        "description": "Incline DB Chest Press",
+                        "primaryMuscle": "chest",
+                        "secondaryMuscles": ["triceps", "shoulders"],
+                        "sets": [
+                            {
+                                "setNumber": 1,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 2,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 3,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 4,
+                                "reps": 10,
+                                "weight": 80
+                            },
+                            {
+                                "setNumber": 5,
+                                "reps": 10,
+                                "weight": 80
+                            }
+                        ],
+                        "video": {
+                            "name": "Incline DB Chest Press",
+                            "description": "Incline DB Chest Press",
+                            "url": "http://someHostServer.com/videos/inclineDbBench.vid"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "firstName": "Lernantino",
+        "lastName": "",
+        "username": "lernantino",
+        "goalWeight": 135,
+        "currentWeight": 140,
+        "bodyFatPercentage": 0.08,
+        "email": "lernantino@techfriends.dev",
+        "password": "password10",
+        "workouts": []
+    }
+]

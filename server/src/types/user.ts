@@ -12,5 +12,5 @@ export interface IUser extends Document {
     currentWeight: number;
     goalWeight: number;
     bodyFatPercentage: number;
-
+    isCorrectPassword(password: string): Promise<boolean>;
 }
