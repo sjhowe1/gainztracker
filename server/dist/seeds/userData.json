@@ -1131,10 +1131,10 @@
                 "secondaryMuscles": [],
                 "exercises": [
                     {
-                        "name": "DB Front Lateral Raises",
-                        "description": "traditional barbell bench",
-                        "primaryMuscle": "shoulders",
-                        "secondaryMuscles": [],
+                        "name": "Stair Master",
+                        "description": "Stair Master",
+                        "primaryMuscle": "cardio",
+                        "secondaryMuscles": ["glutes", "hamstrings", "quads"],
                         "sets": [
                             {
                                 "setNumber": 1,
@@ -1143,9 +1143,9 @@
                             }
                         ],
                         "video": {
-                            "name": "DB Front Lateral Raises",
-                            "description": "DB Front Lateral Raises",
-                            "url": "http://someHostServer.com/videos/dbFrontLateralRaises.vid"
+                            "name": "Stair Master",
+                            "description": "Stair Master",
+                            "url": "http://someHostServer.com/videos/stairMaster.vid"
                         }
                     }
                 ]

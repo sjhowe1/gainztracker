@@ -58,7 +58,7 @@ const resolvers = {
         },
     },
     addExercise: async (_parent, { workoutId, exercise }, context) => {
-        if (context.user?.workouts.workout) {
+        if (context.user?.workouts.filter(workout => workout._id === workoutId)) {
             return await Workout.findOneAndUpdate({ _id: workoutId }, {
                 $addToSet: { exercises: exercise },
             }, {
@@ -69,7 +69,7 @@ const resolvers = {
         throw AuthenticationError;
     },
     removeExercise: async (_parent, { workoutId, exercise }, context) => {
-        if (context.user?.workouts.includes(workoutId)) {
+        if (context.user?.workouts.filter(workout => workout._id === workoutId)) {
             return await User.findOneAndUpdate({ _id: context.user._id }, { $pull: { exercises: exercise } }, { new: true });
         }
         throw AuthenticationError;
