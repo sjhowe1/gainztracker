@@ -1,10 +1,10 @@
 import { useQuery } from '@apollo/client';
-import { GET_PROFILE } from '../utils/queries';
+import { GET_USERS } from '../utils/queries';
 import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
     const navigate = useNavigate();
-    const { data, loading, error } = useQuery(GET_PROFILE, {
+    const { data, loading, error } = useQuery(GET_USERS, {
         context: {
             headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         },

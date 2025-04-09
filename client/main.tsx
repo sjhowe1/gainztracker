@@ -5,6 +5,7 @@ import App from './app';
 import Home from './pages/login';
 import Register from './pages/register';
 import Dashboard from './pages/dashboard';
+import './app.css';
 
 // Create Apollo Client instance
 const client = new ApolloClient({
