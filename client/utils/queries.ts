@@ -92,3 +92,47 @@ export const QUERY_SINGLE_EXERCISE = gql`
     }
   }
 `;
+
+export const GET_SETS = gql`
+    query GetExercises {
+        exercise {
+            _id
+            setNumber
+            reps
+            weight
+        }
+    }
+`;
+
+export const QUERY_SINGLE_SET = gql`
+  query singleSet($setId: ID!) {
+    set(setId: $setId) {
+        _id
+        setNumber
+        reps
+        weight
+    }
+  }
+`;
+
+export const GET_VIDEOS = gql`
+    query GetVideos {
+        video {
+            _id
+            name
+            description
+            url
+        }
+    }
+`;
+
+export const QUERY_SINGLE_VIDEO = gql`
+  query singleVideo($videoId: ID!) {
+    video(videoId: $videoId) {
+        _id
+        name
+        description
+        url
+    }
+  }
+`;

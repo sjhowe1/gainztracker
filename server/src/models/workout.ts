@@ -1,5 +1,7 @@
 import {Schema, model} from 'mongoose';
 import { IWorkout } from '../types/workout';
+import { IExercise } from '../types/exercise';
+import { Muscle } from '../types/muscle';
 
 const workoutSchema = new Schema<IWorkout>(
     {
@@ -9,19 +11,19 @@ const workoutSchema = new Schema<IWorkout>(
             trim: true
         },
         primaryMuscle: {
-            type: String,
+            type: Object as unknown as Muscle,
             required: true,
             trim: true
         },
         secondaryMuscles: [
             {
-                type: String,
+                type: Object as unknown as Muscle,
                 trim: true
             }
         ],
         exercises: [
             {
-                type: String,
+                type: Object as unknown as IExercise,
                 trim: true
             }
         ]
