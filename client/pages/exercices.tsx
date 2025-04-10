@@ -1,28 +1,90 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Exercices: React.FC = () => {
-    // Sample data for exercises grouped by muscle groups
-    const exercisesByGroup = {
-        Chest: ['Bench Press', 'Push-Ups', 'Chest Fly'],
-        Back: ['Pull-Ups', 'Deadlifts', 'Bent-Over Rows'],
-        Legs: ['Squats', 'Lunges', 'Leg Press'],
-        Arms: ['Bicep Curls', 'Tricep Dips', 'Hammer Curls'],
-        Shoulders: ['Overhead Press', 'Lateral Raises', 'Front Raises'],
-    };
+    const [muscleGroups, setMuscleGroups] = useState<string[]>([]);
+    const [exercises, setExercises] = useState<string[]>([]);
+    const [selectedGroup, setSelectedGroup] = useState<string | null>(null);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState<string | null>(null);
 
-    const [selectedGroup, setSelectedGroup] = useState<keyof typeof exercisesByGroup | null>(null);
+    // Fetch muscle groups from the GraphQL API
+    useEffect(() => {
+        const fetchMuscleGroups = async () => {
+            setLoading(true);
+            setError(null);
+            try {
+                const response = await fetch('/graphql', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        query: `
+                            query {
+                                muscleGroups
+                            }
+                        `,
+                    }),
+                });
+                const { data } = await response.json();
+                setMuscleGroups(data.muscleGroups);
+            } catch (err) {
+                setError('Failed to fetch muscle groups');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchMuscleGroups();
+    }, []);
+
+    // Fetch exercises for the selected muscle group
+    useEffect(() => {
+        if (!selectedGroup) return;
+
+        const fetchExercises = async () => {
+            setLoading(true);
+            setError(null);
+            try {
+                const response = await fetch('/graphql', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        query: `
+                            query($group: String!) {
+                                exercisesByGroup(group: $group) {
+                                    name
+                                }
+                            }
+                        `,
+                        variables: { group: selectedGroup },
+                    }),
+                });
+                const { data } = await response.json();
+                setExercises(data.exercisesByGroup.map((exercise: { name: string }) => exercise.name));
+            } catch (err) {
+                setError('Failed to fetch exercises');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchExercises();
+    }, [selectedGroup]);
 
     return (
         <div>
             <h1>Exercises</h1>
             <p>Select a muscle group to explore exercises:</p>
 
+            {/* Display loading or error messages */}
+            {loading && <p>Loading...</p>}
+            {error && <p style={{ color: 'red' }}>{error}</p>}
+
             {/* Buttons for each muscle group */}
             <div>
-                {Object.keys(exercisesByGroup).map((group) => (
+                {muscleGroups.map((group) => (
                     <button
                         key={group}
-                        onClick={() => setSelectedGroup(group as keyof typeof exercisesByGroup)}
+                        onClick={() => setSelectedGroup(group)}
                         style={{
                             margin: '5px',
                             padding: '10px',
@@ -39,7 +101,7 @@ const Exercices: React.FC = () => {
                 <div>
                     <h2>{selectedGroup} Exercises</h2>
                     <ul>
-                        {exercisesByGroup[selectedGroup].map((exercise) => (
+                        {exercises.map((exercise) => (
                             <li key={exercise}>{exercise}</li>
                         ))}
                     </ul>
