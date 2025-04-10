@@ -11,7 +11,7 @@ const workoutSchema = new Schema<IWorkout>(
             trim: true
         },
         primaryMuscle: {
-            type: Object as unknown as Muscle,
+            type: String,
             required: true,
             trim: true
         },
