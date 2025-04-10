@@ -40,6 +40,7 @@ interface AddWorkoutArgs {
 }
 
 interface RemoveWorkoutArgs {
+    _id: string;
     userId: string;
     workoutId: string;
 }
@@ -127,7 +128,7 @@ const resolvers = {
               return await User.findOneAndUpdate(
                 { _id: userId },
                 {
-                  $addToSet: { workouts: workout },
+                  $addToSet: { workouts: _id },
                 },
                 {
                   new: true,
@@ -137,11 +138,11 @@ const resolvers = {
             }
             throw AuthenticationError;
           },
-          removeWorkout: async (_parent: any, { workout }: RemoveWorkoutArgs, context: Context): Promise<User | null> => {
+          removeWorkout: async (_parent: any, { _id }: RemoveWorkoutArgs, context: Context): Promise<User | null> => {
             if (context.user) {
               return await User.findOneAndUpdate(
                 { _id: context.user._id },
-                { $pull: { workouts: workout } },
+                { $pull: { workouts: _id } },
                 { new: true }
               );
             }
