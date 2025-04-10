@@ -32,16 +32,18 @@ interface AddUserArgs {
 
 interface AddWorkoutArgs {
     userId: string;
-    workout: string;
+    name: string;
+    description: string;
+    primaryMuscle: Muscle;
+    secondaryMuscles: Array<Muscle>;
 }
 
 interface RemoveWorkoutArgs {
     userId: string;
-    workout: string;
+    workoutId: string;
 }
 
 interface AddExerciseArgs {
-    userId: string;
     workout: string;
     exercise: string;
     workoutId: string;
