@@ -1,4 +1,4 @@
-import User from "./user";
+import User from "./user.js";
 import Exercise from "./exercise";
 import Workout from "./workout";
 import Set from "./set";
