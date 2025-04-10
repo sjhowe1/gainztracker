@@ -31,6 +31,7 @@ interface AddUserArgs {
 }
 
 interface AddWorkoutArgs {
+    _id: string;
     userId: string;
     name: string;
     description: string;
@@ -121,7 +122,7 @@ const resolvers = {
             }
             throw AuthenticationError;
           },
-        addWorkout: async (_parent: any, { userId, workout }: AddWorkoutArgs, context: Context): Promise<User | null> => {
+        addWorkout: async (_parent: any, { userId, _id }: AddWorkoutArgs, context: Context): Promise<User | null> => {
             if (context.user) {
               return await User.findOneAndUpdate(
                 { _id: userId },
