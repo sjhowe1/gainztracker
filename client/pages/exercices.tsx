@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useWorkoutContext } from '../context/WorkoutContext';
 
 const Exercices: React.FC = () => {
+    const { addWorkout } = useWorkoutContext();
     const [muscleGroups, setMuscleGroups] = useState<string[]>([]);
-    const [exercises, setExercises] = useState<string[]>([]);
+    const [exercises, setExercises] = useState<{ name: string; muscleGroup: string }[]>([]);
     const [selectedGroup, setSelectedGroup] = useState<string | null>(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
@@ -59,7 +61,7 @@ const Exercices: React.FC = () => {
                     }),
                 });
                 const { data } = await response.json();
-                setExercises(data.exercisesByGroup.map((exercise: { name: string }) => exercise.name));
+                setExercises(data.exercisesByGroup.map((exercise: { name: string }) => ({ name: exercise.name, muscleGroup: selectedGroup })));
             } catch (err) {
                 setError('Failed to fetch exercises');
             } finally {
@@ -102,7 +104,16 @@ const Exercices: React.FC = () => {
                     <h2>{selectedGroup} Exercises</h2>
                     <ul>
                         {exercises.map((exercise) => (
-                            <li key={exercise}>{exercise}</li>
+                            <li key={exercise.name}>
+                                {exercise.name}
+                                <button
+                                    onClick={() =>
+                                        addWorkout({ name: exercise.name, muscleGroup: selectedGroup })
+                                    }
+                                >
+                                    Add to Workout
+                                </button>
+                            </li>
                         ))}
                     </ul>
                     <button onClick={() => setSelectedGroup(null)} style={{ marginTop: '10px' }}>
