@@ -1,5 +1,7 @@
 import {Schema, model} from 'mongoose';
 import { IExercise } from '../types/exercise';
+import { Muscle } from '../types/muscle';
+import { Set } from '../types/set';
 
 const exerciseSchema = new Schema<IExercise>(
     {
@@ -15,7 +17,13 @@ const exerciseSchema = new Schema<IExercise>(
         },
         secondaryMuscles: [
             {
-                type: String,
+                type: Object as unknown as Muscle,
+                trim: true
+            }
+        ],
+        sets: [
+            {
+                type: Object as unknown as Set,
                 trim: true
             }
         ],

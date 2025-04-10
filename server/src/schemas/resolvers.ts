@@ -31,17 +31,21 @@ interface AddUserArgs {
 }
 
 interface AddWorkoutArgs {
+    _id: string;
     userId: string;
-    workout: string;
+    name: string;
+    description: string;
+    primaryMuscle: Muscle;
+    secondaryMuscles: Array<Muscle>;
 }
 
 interface RemoveWorkoutArgs {
+    _id: string;
     userId: string;
-    workout: string;
+    workoutId: string;
 }
 
 interface AddExerciseArgs {
-    userId: string;
     workout: string;
     exercise: string;
     workoutId: string;
@@ -119,12 +123,12 @@ const resolvers = {
             }
             throw AuthenticationError;
           },
-        addWorkout: async (_parent: any, { userId, workout }: AddWorkoutArgs, context: Context): Promise<User | null> => {
+        addWorkout: async (_parent: any, { userId, _id }: AddWorkoutArgs, context: Context): Promise<User | null> => {
             if (context.user) {
               return await User.findOneAndUpdate(
                 { _id: userId },
                 {
-                  $addToSet: { workouts: workout },
+                  $addToSet: { workouts: _id },
                 },
                 {
                   new: true,
@@ -134,11 +138,11 @@ const resolvers = {
             }
             throw AuthenticationError;
           },
-          removeWorkout: async (_parent: any, { workout }: RemoveWorkoutArgs, context: Context): Promise<User | null> => {
+          removeWorkout: async (_parent: any, { _id }: RemoveWorkoutArgs, context: Context): Promise<User | null> => {
             if (context.user) {
               return await User.findOneAndUpdate(
                 { _id: context.user._id },
-                { $pull: { workouts: workout } },
+                { $pull: { workouts: _id } },
                 { new: true }
               );
             }
