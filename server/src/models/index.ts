@@ -1,7 +1,7 @@
-import User from "./user";
-import Exercise from "./exercise";
-import Workout from "./workout";
-import Set from "./set";
-import Video from "./video"
+import User from "./user.js";
+import Exercise from "./exercise.js";
+import Workout from "./workout.js";
+import Set from "./set.js";
+import Video from "./video.js"
 
 export { User, Exercise, Workout, Set, Video};

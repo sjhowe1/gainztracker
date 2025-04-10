@@ -2,6 +2,7 @@ import {Schema, model} from 'mongoose';
 import { IExercise } from '../types/exercise';
 import { Muscle } from '../types/muscle';
 import { Set } from '../types/set';
+import { IVideo } from '../types/video';
 
 const exerciseSchema = new Schema<IExercise>(
     {
@@ -27,12 +28,12 @@ const exerciseSchema = new Schema<IExercise>(
                 trim: true
             }
         ],
-        video: [
-            {
-                type: URL,
+        video: {
+            
+                type: Object as unknown as IVideo,
                 trim: true
             }
-        ]
+        
 
     },
     {
