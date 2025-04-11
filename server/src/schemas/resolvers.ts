@@ -87,13 +87,25 @@ interface ExerciseArgs {
 const resolvers = {
     Query: {
         users: async (): Promise<User[]> => {
-            return await User.find();
+            try {
+                return await User.find({}).populate('workouts');
+            }
+            catch (error) {
+                console.error('Error fetching users data: ', error);
+                throw new Error('Failed to fetch users data');
+            }
         },
         user: async (_parent: any, { userId }: UserArgs): Promise<User | null> => {
             return await User.findOne({ _id: userId });
         },
         workouts: async (): Promise<Workout[]> => {
-            return await Workout.find();
+            try {
+                return await Workout.find({})
+            }
+            catch (error){
+                console.error('Error fetching users data: ', error);
+                throw new Error('Failed to fetch users data');
+            }
         },
         workout: async (_parent: any, { workoutId }: WorkoutArgs): Promise<Workout | null> => {
             return await Workout.findOne({ _id: workoutId });
