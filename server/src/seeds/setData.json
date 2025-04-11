@@ -1,0 +1,52 @@
+[
+    {
+        "setNumber": 1,
+        "reps": 12,
+        "weight": 35
+    },
+    {
+        "setNumber": 2,
+        "reps": 12,
+        "weight": 35
+    },
+    {
+        "setNumber": 3,
+        "reps": 12,
+        "weight": 35
+    },
+    {
+        "setNumber": 4,
+        "reps": 12,
+        "weight": 35
+    },
+    {
+        "setNumber": 5,
+        "reps": 12,
+        "weight": 35
+    },
+    {
+        "setNumber": 1,
+        "reps": 10,
+        "weight": 225
+    },
+    {
+        "setNumber": 2,
+        "reps": 10,
+        "weight": 225
+    },
+    {
+        "setNumber": 3,
+        "reps": 10,
+        "weight": 225
+    },
+    {
+        "setNumber": 4,
+        "reps": 10,
+        "weight": 225
+    },
+    {
+        "setNumber": 5,
+        "reps": 10,
+        "weight": 225
+    }
+]

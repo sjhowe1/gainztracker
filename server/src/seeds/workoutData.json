@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Heavy Chest Day",
+        "description": "Doing working sets up to 85% of my max",
+        "primaryMuscle": "chest",
+        "secondaryMuscles": ["triceps", "shoulders"]
+    },
+    {
+        "name": "Quad Day",
+        "description": "Leg day primarily focused on quads with some glutes and hamstrings",
+        "primaryMuscle": "quads",
+        "secondaryMuscles": ["hamstrings", "glutes"]
+    },
+    {
+        "name": "Shoulders",
+        "description": "shoulders and triceps with a little bit of chest",
+        "primaryMuscle": "shoulders",
+        "secondaryMuscles": ["triceps", "chest"]
+    },
+    {
+        "name": "Leg Day - Hamstrings & Glutes",
+        "description": "Leg day focused on hamstrings and glutes, and little of quads",
+        "primaryMuscle": "hamstrings",
+        "secondaryMuscles": ["glutes", "quads"]
+    },
+    {
+        "name": "Arms",
+        "description": "Biceps and Triceps",
+        "primaryMuscle": "biceps",
+        "secondaryMuscles": ["triceps"]
+    },
+    {
+        "name": "Active Recovery Day",
+        "description": "cardio only day",
+        "primaryMuscle": "cardio",
+        "secondaryMuscles": []
+    }
+]
