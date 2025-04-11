@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Flat Barbell Bench",
+        "description": "Flat Barbell Bench",
+        "url": "http://someHostServer.com/videos/flatBench.vid"
+    },
+    {
+        "name": "Incline DB Chest Press",
+        "description": "Incline DB Chest Press",
+        "url": "http://someHostServer.com/videos/dbChestInclineBench.vid"
+    },
+    {
+        "name": "Pec Dec Flies",
+        "description": "Machine chest flies",
+        "url": "http://someHostServer.com/videos/pecDecFlies.vid"
+    },
+    {
+        "name": "Decline Bench",
+        "description": "Decline chest press barbell bench",
+        "url": "http://someHostServer.com/videos/declineBench.vid"
+    },
+    {
+        "name": "Leg Extensions",
+        "description": "Leg Extensions",
+        "url": "http://someHostServer.com/videos/legExtension.vid"
+    },
+    {
+        "name": "Adductor Machine",
+        "description": "Adductor Machine",
+        "url": "http://someHostServer.com/videos/adductorMachine.vid"
+    },
+    {
+        "name": "Hip Thrusters",
+        "description": "Hip Thrusters on glute drive machine",
+        "url": "http://someHostServer.com/videos/pecDecFlies.vid"
+    },
+    {
+        "name": "Seated Hamstring Curls",
+        "description": "Seated Hamstring Curls",
+        "url": "http://someHostServer.com/videos/seatedHamstringCurl.vid"
+    },
+    {
+        "name": "Seated Hamstring Curls",
+        "description": "Seated Hamstring Curls",
+        "url": "http://someHostServer.com/videos/seatedHamstringCurl.vid"
+    },
+    {
+        "name": "DB Front Lateral Raises",
+        "description": "DB Front Lateral Raises",
+        "url": "http://someHostServer.com/videos/dbFrontLateralRaises.vid"
+    },
+    {
+        "name": "DB Side Lateral Raises",
+        "description": "DB Side Lateral Raises",
+        "url": "http://someHostServer.com/videos/dbSideLateralRaises.vid"
+    },
+    {
+        "name": "Rear DB Shoulder Flies",
+        "description": "Rear DB Shoulder Flies",
+        "url": "http://someHostServer.com/videos/rearDbShoulderFlies.vid"
+    }
+]

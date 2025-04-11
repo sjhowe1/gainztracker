@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Flat Chest Press",
+        "description": "traditional barbell bench",
+        "primaryMuscle": "chest",
+        "secondaryMuscles": ["triceps", "shoulders"]
+    },
+    {
+        "name": "Incline DB Chest Press",
+        "description": "DB chest press on inclined bench",
+        "primaryMuscle": "chest",
+        "secondaryMuscles": ["triceps", "shoulders"]
+    },
+    {
+        "name": "Pec Dec Flies",
+        "description": "Machine chest flies",
+        "primaryMuscle": "chest",
+        "secondaryMuscles": ["shoulders"]
+    },
+    {
+        "name": "Decline Chest Press",
+        "description": "Decline barbell bench",
+        "primaryMuscle": "chest",
+        "secondaryMuscles": ["triceps", "shoulders"]
+    },
+    {
+        "name": "Leg Extensions",
+        "description": "Leg Extensions",
+        "primaryMuscle": "quads",
+        "secondaryMuscles": []
+    },
+    {
+        "name": "Adductor Machine",
+        "description": "Adductor Machine",
+        "primaryMuscle": "quads",
+        "secondaryMuscles": []
+    },
+    {
+        "name": "Hip Thrusters",
+        "description": "Hip Thrusters",
+        "primaryMuscle": "glutes",
+        "secondaryMuscles": ["quads", "hamstrings"]
+    }
+]
