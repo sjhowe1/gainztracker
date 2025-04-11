@@ -1,6 +1,5 @@
 import {Schema, model} from 'mongoose';
 import { IWorkout } from '../types/workout';
-import { IExercise } from '../types/exercise';
 import { Muscle } from '../types/muscle';
 
 const workoutSchema = new Schema<IWorkout>(
@@ -23,8 +22,8 @@ const workoutSchema = new Schema<IWorkout>(
         ],
         exercises: [
             {
-                type: Object as unknown as IExercise,
-                trim: true
+                type: Schema.Types.ObjectId,
+                ref: 'Exercise'
             }
         ]
 

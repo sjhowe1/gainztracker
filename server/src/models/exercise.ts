@@ -1,8 +1,6 @@
 import {Schema, model} from 'mongoose';
 import { IExercise } from '../types/exercise';
 import { Muscle } from '../types/muscle';
-import { Set } from '../types/set';
-import { IVideo } from '../types/video';
 
 const exerciseSchema = new Schema<IExercise>(
     {
@@ -24,14 +22,14 @@ const exerciseSchema = new Schema<IExercise>(
         ],
         sets: [
             {
-                type: Object as unknown as Set,
-                trim: true
+                type: Schema.Types.ObjectId,
+                ref: 'Set'
             }
         ],
         video: {
             
-                type: Object as unknown as IVideo,
-                trim: true
+                type: Schema.Types.ObjectId,
+                ref: 'Video'
             }
         
 
